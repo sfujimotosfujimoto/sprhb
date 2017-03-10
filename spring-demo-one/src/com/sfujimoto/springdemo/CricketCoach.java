@@ -3,8 +3,36 @@ package com.sfujimoto.springdemo;
 public class CricketCoach implements Coach {
 	
 	private FortuneService fortuneService;
-	
-	// create a no-arg constructor
+
+	// add new fields for emailaddress and team
+    private String emailAddress;
+    private String team;
+
+
+    // for email
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        System.out.println("CricketCoach: inside setter method - setEmailAdress-");
+        this.emailAddress = emailAddress;
+
+    }
+
+
+    // for team
+    public String getTeam() {
+        return team;
+    }
+
+    public void setTeam(String team) {
+        System.out.println("CricketCoach: inside setter method - setTeam -");
+        this.team = team;
+
+    }
+
+    // create a no-arg constructor
 	public CricketCoach() {
 		System.out.println("CricketCoach: inside no-arg constructor");
 	}
