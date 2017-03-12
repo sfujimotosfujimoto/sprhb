@@ -2,6 +2,8 @@ package com.sfujimoto;
 
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.Random;
 
 /**
@@ -25,8 +27,17 @@ public class RandomFortuneService implements FortuneService {
 
         String theFortune = data[index];
 
-
         return theFortune + " : " + index;
 
+    }
+
+    @PostConstruct
+    public void doMyStartupStuff() {
+        System.out.println(">> RandomFortuneService: inside doMyStartupStuff()");
+    }
+
+    @PreDestroy
+    public void doMyCleanupStuff() {
+        System.out.println(">> RandomFortuneService: inside doMyCleanupStuff()");
     }
 }
