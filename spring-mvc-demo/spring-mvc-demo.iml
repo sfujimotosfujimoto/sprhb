@@ -35,5 +35,6 @@
         <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/lib" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="javax.servlet-5.1.12" level="project" />
   </component>
 </module>
