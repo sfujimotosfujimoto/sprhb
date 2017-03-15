@@ -13,7 +13,7 @@ import java.sql.*;
 /**
  * Created by sfujimoto on 2017/03/15.
  */
-@WebServlet(name = "TestDbServlet")
+@WebServlet(name = "TestDbServlet", urlPatterns = {"/TestDbServlet"})
 public class TestDbServlet extends HttpServlet {
 
 
