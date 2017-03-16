@@ -12,5 +12,7 @@
 </head>
 <body>
 List Customers - coming soon ........
+<br><br>
+${customers}
 </body>
 </html>
