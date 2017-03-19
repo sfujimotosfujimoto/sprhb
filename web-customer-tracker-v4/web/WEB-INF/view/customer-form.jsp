@@ -34,6 +34,9 @@
 	<%-- Add code to save customer --%>
 	<form:form action="saveCustomer" modelAttribute="customer" method="post">
 		
+		<%-- need  to associate this data with customer--%>
+		<form:hidden path="id" />
+		
 		<table>
 			<tbody>
 			<tr>
